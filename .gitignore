@@ -1,0 +1,37 @@
+# Data
+data/
+datasets/
+mvtec*/
+*.tar.xz
+*.zip
+
+# Logs (SLURM + training)
+logs/
+*.log
+slurm-*.out
+slurm-*.err
+wandb/
+runs/
+lightning_logs/
+
+# Model weights (too big for GitHub)
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# Python / notebook junk
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Keep results, but only small files
+results/**
+!results/**/
+!results/**/*.csv
+!results/**/*.json
+!results/**/*.png
+*.sh
+SSL_defect_detection.py
